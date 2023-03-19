@@ -84,3 +84,4 @@ require (
 	gopkg.in/djherbis/times.v1 v1.3.0 // indirect
 )
 
+replace github.com/projectdiscovery/uncover v1.0.3 => github.com/zkbupt/uncover v1.0.3
