@@ -1,4 +1,4 @@
-module github.com/projectdiscovery/uncover
+module github.com/zkbupt/uncover
 
 go 1.19
 
