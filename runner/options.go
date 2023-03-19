@@ -2,6 +2,7 @@ package runner
 
 import (
 	"fmt"
+	"github.com/projectdiscovery/uncover/uncover"
 	"os"
 	"path/filepath"
 	"strings"
@@ -55,7 +56,10 @@ type Options struct {
 	Publicwww          goflags.StringSlice
 	HunterHow          goflags.StringSlice
 	DisableUpdateCheck bool
+	OnResult           OnResultCallback
 }
+
+type OnResultCallback func(*uncover.Result)
 
 // ParseOptions parses the command line flags provided by a user
 func ParseOptions() *Options {
